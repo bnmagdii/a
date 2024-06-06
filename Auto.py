@@ -4,7 +4,7 @@ import sys
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
-correct_password_hash = hash_password("TroGNWigKr")
+correct_password_hash = hash_password("bnmagdii")
 input_password = input("Script Password :  ")
 
 if hash_password(input_password) == correct_password_hash:
